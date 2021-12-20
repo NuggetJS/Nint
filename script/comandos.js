@@ -1,10 +1,10 @@
 const comandos = {
-    verificar = function (comando) {
+    verificar: (comando) => {
         if (comando !== "") {
             comandos.comandos(comando);
         };
     },
-    comandos: function(cmd) {
+    comandos: (cmd)=> {
                     // -------------------------------
                     //buscar en diversas plataformas
                     // -------------------------------
