@@ -4,11 +4,20 @@ const button = {
 }
 
 
-button.button.onmousedown = function () {
-    button.buttonEfects.classList.remove("AbHidden")
+button.button.onmousedown = () => {
+    button.buttonEfects.classList.remove("AbHidden");
     recognition.start();
 }
-button.button.onmouseup = function () {
+button.button.onmouseup =() => {
     recognition.stop();
     button.buttonEfects.classList.add("AbHidden")
 }
+
+button.button.addEventListener("touchstart", () =>{
+    button.buttonEfects.classList.remove("AbHidden");
+    recognition.start();
+});
+button.button.addEventListener("touchend", () =>{
+    button.buttonEfects.classList.add("AbHidden");
+    recognition.stop();
+});
