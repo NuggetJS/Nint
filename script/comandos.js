@@ -7,7 +7,10 @@ const comandos = {
     comandos: (cmd)=> {
                     
         // BUSQUEDA AVANZADA
-        if (cmd.indexOf('investiga sobre') > -1 || cmd.includes("haz una busqueda avanzada sobre un archivo llamado") || cmd.includes("busca todo lo que hay sobre")){
+        if (cmd == null) {
+            
+        }
+        else if (cmd.includes('investiga sobre')|| cmd.includes("haz una busqueda avanzada sobre un archivo llamado") || cmd.includes("busca todo lo que hay sobre")){
             cmd = cmd.replace("investiga sobre", "");
             cmd = cmd.replace("haz una busqueda avanzada sobre un archivo llamado", "");
             cmd = cmd.replace("busca todo lo que hay sobre", "");
