@@ -4,10 +4,23 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(5, 8, 27);
+    animation: background 10s linear infinite;
+}
+@keyframes background {
+    0% {
+        background-color: rgb(5, 8, 27);
+    }
+    50%{
+        background-color: rgb(9, 14, 46);
+    }
+    100%{
+        background-color: rgb(5, 8, 27); 
+    }
 }
 
 .contenedor{
+    box-shadow:inset 0px 0px 500px black;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -20,7 +33,7 @@ body{
     width: 80%;
     position: absolute;
     height: 50%;
-    top: 0%;
+    top: 10%;
     text-align: center;
     font-size: 25px;
     color: white;
@@ -30,6 +43,7 @@ body{
 }
 
 .boton{
+    
     position: fixed;
     width: 500px;
     height: 300px;
@@ -40,6 +54,7 @@ body{
 }
 
 .button{
+    box-shadow: 0px 0px 20px white;
     z-index: 100;
     cursor: pointer;
     width: 100px;
@@ -52,7 +67,7 @@ body{
     transform: rotate(45deg);
     border: none transparent;
 }
-.button div{
+.button .effect{
     width: 20px;
     height: 20px;
     border: 10px solid black;
@@ -94,6 +109,7 @@ body{
 }
 
 .button .hitbox{
+    border: none transparent black;
     z-index: 100;
     position: absolute;
     width: 100%;
@@ -111,7 +127,6 @@ body{
     width: 180px;
     height: 180px;
     position: absolute;
-    background-color: black;
     transform: rotate(45deg);
     /* border-radius: 200px; */
     overflow: hidden;
@@ -134,7 +149,7 @@ body{
     content: "";
     position: absolute;
     inset: 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.582);
 }
 
 .AbHidden::before{

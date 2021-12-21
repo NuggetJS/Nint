@@ -2,7 +2,7 @@
 let recognition = new webkitSpeechRecognition();
 recognition.lang = 'es-ES';
 recognition.continuous = false;
-recognition.interResults = true;
+recognition.interResults = false;
 
 // establecer un evento al iniciar 
 recognition.addEventListener("start", () => {

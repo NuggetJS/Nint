@@ -10,6 +10,11 @@ const comandos = {
         if (cmd == null) {
             
         }
+        else if (cmd.indexOf('busca un video llamado') > -1 ){
+            cmd = cmd.replace("busca un video llamado", "");
+            respuesta = `De acuerdo, iniciando busqueda avanzada sobre ${cmd}`;
+            window.open("https://www.google.com/search?q="+cmd+"+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+%22last+modified%22+%28mp4%7Cwmv%7Caac%7Cavi%29&rlz=1C1CHBF_esVE969VE969&sxsrf=AOaemvK21bXbEbAEEB2Ihg6LBBI-1QACiw%3A1632405073724&ei=UYZMYdPFK5aNwbkPs5ilwAY&oq=avengers+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+%22last+modified%22+%28mp4%7Cwmv%7Caac%7Cavi%29&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsANKBAhBGABQzq0OWLGuDmCKsg5oAXACeACAAQCIAQCSAQCYAQCgAQHIAQjAAQE&sclient=gws-wiz&ved=0ahUKEwiTsrHknpXzAhWWRjABHTNMCWgQ4dUDCA4&uact=5")
+        }
         else if (cmd.includes('investiga sobre')|| cmd.includes("haz una busqueda avanzada sobre un archivo llamado") || cmd.includes("busca todo lo que hay sobre")){
             cmd = cmd.replace("investiga sobre", "");
             cmd = cmd.replace("haz una busqueda avanzada sobre un archivo llamado", "");
