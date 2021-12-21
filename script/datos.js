@@ -1,5 +1,5 @@
 const datos = {
-    username = localStorage.getItem("name"),
+    username: localStorage.getItem("name"),
 
 }
 
