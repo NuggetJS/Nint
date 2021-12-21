@@ -28,12 +28,9 @@ function escribir (text,tiempo, etiqueta){
       }
        
     }, tiempo)
-    setTimeout(() => {
-        text.innerHTML = "";
-        }, 2000);  
 }
 function hablar(respuesta) {  
-    
+  text.nintTxt.innerHTML = "";
     respuesta = new SpeechSynthesisUtterance(respuesta);
     // let voices = speechSynthesis.getVoices();
     // respuesta.voice = voices[voces];

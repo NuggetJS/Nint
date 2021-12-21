@@ -19,7 +19,7 @@ body{
 .TxtG{
     width: 70%;
     position: absolute;
-    height: 500px;
+    height: 700px;
     top: 0%;
     text-align: center;
     font-size: 30px;
@@ -28,13 +28,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.UserOrder{
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
+
 .boton{
     position: fixed;
     width: 500px;
