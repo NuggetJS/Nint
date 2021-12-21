@@ -14,7 +14,6 @@ const comandos = {
             cmd = cmd.replace("investiga sobre", "");
             cmd = cmd.replace("haz una busqueda avanzada sobre un archivo llamado", "");
             cmd = cmd.replace("busca todo lo que hay sobre", "");
-            wink()
             // +-inurl:(php|pls) intitle:index.of "last modified" (html|iso|txt|avi|mp4|wav);
             respuesta = "de acuerdo, iniciando busqueda avanzada en multiples sitios web sobre"+cmd;
             window.open("https://www.google.com/search?q="+cmd+"+-inurl%3A%28php%7Cpls%29+intitle%3Aindex.of+%22last+modified%22+%28html%7Ciso%7Ctxt%7Cavi%7Cmp4%7Cwav%29%3B&rlz=1C1CHBF_esVE969VE969&sxsrf=AOaemvL2Tad3uanMcaL4k6NM39OD8TVLZg%3A1633319704023&ei=GHtaYfFyh4vBuQ_0152QCA&ved=0ahUKEwjx3oyG7q_zAhWHRTABHfRrB4IQ4dUDCA4&uact=5&oq=fast+os+-inurl%3A%28php%7Cpls%29+intitle%3Aindex.of+%22last+modified%22+%28html%7Ciso%7Ctxt%7Cavi%7Cmp4%7Cwav%29%3B&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANKBAhBGABQroEBWK6BAWD9hgFoAXACeACAAYEBiAGBAZIBAzAuMZgBAKABAcgBCMABAQ&sclient=gws-wiz");
