@@ -9,7 +9,7 @@ const comandos = {
                     //buscar en diversas plataformas
                     // -------------------------------
 
-                    if (cmd.includes('busca en google') || cmd.includes('buscar en google') || cmd.includes('busca en internet') || cmd.includes('buscar en internet') || cmd.includes('busca') && cmd.indexOf("en") < 13|| cmd.includes('buscar') && cmd.indexOf("en") < 13){
+                    if (cmd.includes('busca en google') || cmd.includes('buscar en google') || cmd.includes('busca en internet') || cmd.includes('buscar en internet')){
                         url = cmd;
                         url = url.replace("busca en google", "");
                         url = url.replace("busca en internet", "");
