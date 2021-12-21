@@ -40,5 +40,5 @@ function hablar(respuesta) {
     speechSynthesis.speak(respuesta);
     // animacionHablar(Anim);
     console.log(respuesta.text); 
-    escribir(respuesta,50,text.nintTxt);
+    escribir(respuesta.text,50,text.nintTxt);
   }
