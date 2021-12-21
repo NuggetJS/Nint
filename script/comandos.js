@@ -5,11 +5,52 @@ const comandos = {
         };
     },
     comandos: (cmd)=> {
+                    
+        // BUSQUEDA AVANZADA
+        if (cmd.indexOf('investiga sobre') > -1 || cmd.includes("haz una busqueda avanzada sobre un archivo llamado") || cmd.includes("busca todo lo que hay sobre")){
+            cmd = cmd.replace("investiga sobre", "");
+            cmd = cmd.replace("haz una busqueda avanzada sobre un archivo llamado", "");
+            cmd = cmd.replace("busca todo lo que hay sobre", "");
+            wink()
+            // +-inurl:(php|pls) intitle:index.of "last modified" (html|iso|txt|avi|mp4|wav);
+            respuesta = "de acuerdo, iniciando busqueda avanzada en multiples sitios web sobre"+cmd;
+            window.open("https://www.google.com/search?q="+cmd+"+-inurl%3A%28php%7Cpls%29+intitle%3Aindex.of+%22last+modified%22+%28html%7Ciso%7Ctxt%7Cavi%7Cmp4%7Cwav%29%3B&rlz=1C1CHBF_esVE969VE969&sxsrf=AOaemvL2Tad3uanMcaL4k6NM39OD8TVLZg%3A1633319704023&ei=GHtaYfFyh4vBuQ_0152QCA&ved=0ahUKEwjx3oyG7q_zAhWHRTABHfRrB4IQ4dUDCA4&uact=5&oq=fast+os+-inurl%3A%28php%7Cpls%29+intitle%3Aindex.of+%22last+modified%22+%28html%7Ciso%7Ctxt%7Cavi%7Cmp4%7Cwav%29%3B&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANKBAhBGABQroEBWK6BAWD9hgFoAXACeACAAYEBiAGBAZIBAzAuMZgBAKABAcgBCMABAQ&sclient=gws-wiz");
+            setTimeout(() => {
+            window.open("https://www.compucalitv.com/?s="+cmd);
+            setTimeout(() => {
+            window.open("https://www.youtube.com/results?search_query="+cmd);
+            setTimeout(() => {
+            window.open("https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords="+cmd);
+    
+            setTimeout(() => {
+            window.open("https://www.facebook.com/search/top/?q="+cmd);
+            setTimeout(() => {
+            window.open("https://listado.mercadolibre.com.ve/"+cmd);
+            setTimeout(() => {
+            window.open('https://www.facebook.com/marketplace/103740209665322/search/?query='+cmd);
+            setTimeout(() => {
+            window.open('https://www.gamestorrents.fm/?s='+cmd);
+            setTimeout(() => {
+            window.open('https://pivigames.blog/?s='+cmd);
+            }, 900);
+            }, 900);
+            }, 900);
+            }, 900);
+            }, 900);
+            }, 900);
+            }, 900);
+            }, 900);
+            
+            
+        
+        
+        }
+
                     // -------------------------------
                     //buscar en diversas plataformas
                     // -------------------------------
 
-                    if (cmd.includes('busca en google') || cmd.includes('buscar en google') || cmd.includes('busca en internet') || cmd.includes('buscar en internet')){
+                    else if (cmd.includes('busca en google') || cmd.includes('buscar en google') || cmd.includes('busca en internet') || cmd.includes('buscar en internet')){
                         url = cmd;
                         url = url.replace("busca en google", "");
                         url = url.replace("busca en internet", "");
@@ -87,5 +128,7 @@ const comandos = {
                 
                     }
                     
+                    hablar(respuesta);
     },
+
 }

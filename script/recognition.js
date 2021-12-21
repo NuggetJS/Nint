@@ -2,7 +2,7 @@
 let recognition = new webkitSpeechRecognition();
 recognition.lang = 'es-ES';
 recognition.continuous = false;
-recognition.interResults = false;
+recognition.interResults = true;
 
 // establecer un evento al iniciar 
 recognition.addEventListener("start", () => {
@@ -20,6 +20,7 @@ recognition.onresult = (event) => {
     const results = event.results;
     frase = results[results.length - 1][0].transcript;
     var cmd = frase;
+    escribir(cmd,50,text.UserText);
     respuesta = "";
     // simplificar comando
     cmd = cmd.toLowerCase();
