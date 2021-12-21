@@ -26,7 +26,11 @@ function escribir (text,tiempo, etiqueta){
         etiqueta.innerHTML += arrayCaracteres[i]
         i++
       }
+       
     }, tiempo)
+    setTimeout(() => {
+        text.innerHTML = "";
+        }, 2000);  
 }
 function hablar(respuesta) {  
     
