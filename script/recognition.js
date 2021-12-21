@@ -20,7 +20,7 @@ recognition.onresult = (event) => {
     const results = event.results;
     frase = results[results.length - 1][0].transcript;
     var cmd = frase;
-    escribir(frase,50,text.UserText);
+    escribir(cmd,50,text.UserText);
     respuesta = "";
     // simplificar comando
     cmd = cmd.toLowerCase();

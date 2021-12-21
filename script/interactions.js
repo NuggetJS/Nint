@@ -5,7 +5,7 @@ const button = {
 }
 const text ={
     nintTxt: document.getElementById("Resp"),
-    UserText: document.getElementById("UserText"),
+    UserText: document.getElementById("UserOrder"),
 }
 
 
