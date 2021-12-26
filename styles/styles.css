@@ -7,6 +7,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(5, 8, 27);
     animation: background 10s linear infinite;
+    user-select: none;
 }
 @keyframes background {
     0% {
@@ -28,6 +29,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .TxtG{
@@ -41,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .boton{
@@ -52,6 +55,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .button{
@@ -67,12 +71,14 @@ body{
     align-items: center;
     transform: rotate(45deg);
     border: none transparent;
+    user-select: none;
 }
 .button .effect{
     width: 20px;
     height: 20px;
     border: 10px solid black;
     position: absolute;
+    user-select: none;
 }
 
 .button::before{
@@ -85,6 +91,7 @@ body{
     border-right:5px solid white;
     top: -15%;
     right: -15%;
+    user-select: none;
 }
 .button::after{
     transition: all 200ms;
@@ -96,17 +103,20 @@ body{
     border-left:5px solid white;
     bottom: -15%;
     left: -15%;
+    user-select: none;
 }
 
 .buttonActive::after{
     transition: all 200ms;
     bottom: -100%;
     left: -100%;
+    user-select: none;
 }
 .buttonActive::before{
     transition: all 200ms;
     top: -100%;
     right: -100%;
+    user-select: none;
 }
 
 .button .hitbox{
@@ -115,6 +125,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
+    user-select: none;
 }
 
 .hitboxActive{
