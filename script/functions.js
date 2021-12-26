@@ -41,7 +41,7 @@ function escribir (text,tiempo, etiqueta){
     }, tiempo)
 }
 function hablar(respuesta) {  
-  addmsg("", respuesta.text)
+  addmsg("", respuesta)
     respuesta = new SpeechSynthesisUtterance(respuesta);
     // let voices = speechSynthesis.getVoices();
     // respuesta.voice = voices[voces];
