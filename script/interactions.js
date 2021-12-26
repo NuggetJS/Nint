@@ -4,7 +4,7 @@ const button = {
     buttonEfects: document.getElementById("buttonEffects")
 }
 const text ={
-    nintTxt: document.getElementById("Resp"),
+    msgBox: document.getElementById("msgBox"),
 }
 
 

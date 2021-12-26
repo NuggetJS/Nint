@@ -134,6 +134,15 @@ const comandos = {
                         peticionCumplida = "si";
                 
                     }
+
+
+
+
+
+                    if (respuesta == "" || cmd.includes("investiga") || cmd.includes("busca") || cmd.includes("buscar")) {
+                        window.open('https://www.google.com/search?q='+url); 
+                        respuesta = `Buscando en Google ${url}`;
+                    }
                     
                     hablar(respuesta);
     },

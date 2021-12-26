@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(5, 8, 27);
     animation: background 10s linear infinite;
 }
@@ -162,6 +163,74 @@ opacity: 0%;
 }   
 
 
+.msgs{
+    flex: 1;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 98%;
+    height: 65%;
+    overflow: hidden;
+    top: 10%;
+    padding-left: 20px;
+	overflow-y: scroll;
+	flex: 1;
+}
+.msgs .msgN{
+    left: 0%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 100px 100px 100px;
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 40px;
+    max-height: 200px;
+    font-size: 20px;
+    background-color: white;
+}
+.msgs p{
+    margin: 5px;
+}
+.msgs .msgU{
+    right: 0%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 0px 100px 100px;
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 40px;
+    max-height: 200px;
+    font-size: 20px;
+    background-color: rgb(153, 255, 184);
+}
+.msgHitbox{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+*::-webkit-scrollbar {
+	width: 5px;
+}
+*::-webkit-scrollbar-track {
+	background: rgb(0, 1, 32);
+}
+*::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 29);
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: rgb(133, 133, 133);
+}
+
 
 @keyframes rotate {
     from{
@@ -169,5 +238,12 @@ opacity: 0%;
     }
     to{
         transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width:1080px){
+    .msgs{
+        width: 60%;
     }
 }

@@ -24,7 +24,6 @@ recognition.onresult = (event) => {
     // simplificar comando
     cmd = cmd.toLowerCase();
     cmd = cmd.replace("á", "a");
-    cmd = cmd.replace("jehová", "jehova");
     cmd = cmd.replace("é", "e");
     cmd = cmd.replace("í", "i");
     cmd = cmd.replace("ó", "o");
@@ -36,8 +35,11 @@ recognition.onresult = (event) => {
     cmd = cmd.replace("ò", "o");
     cmd = cmd.replace("ù", "u");
     // ----
-    comandos.verificar(cmd);
-    console.log(cmd)
+    addmsg("usr", frase)
+    setTimeout(() => {
+        comandos.verificar(cmd);
+    }, 500);
+    
 }
 // establecer un evento al terminar el reconocimiento 
 recognition.onend = function () {
